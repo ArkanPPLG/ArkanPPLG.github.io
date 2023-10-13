@@ -66,7 +66,7 @@ function updateWaktu() {
         minute: 'numeric',
         second: 'numeric',
     });
-    const formattedTime = formatter.format(date);
+    const formattedTime = formatter.format(date2);
     const input = document.getElementById("jam")
     let text = `${week[today]} : ${formattedTime}`
 
