@@ -72,4 +72,3 @@ function updateWaktu() {
 }
 
 setInterval(updateWaktu, 1000)
-updateWaktu()
