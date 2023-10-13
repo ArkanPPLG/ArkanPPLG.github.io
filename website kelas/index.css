@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#schedule {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #f0f0f0;
+}
+#piket {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #061280;
+    background-color: #589a6b;
+}
