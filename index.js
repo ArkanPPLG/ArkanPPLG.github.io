@@ -1,6 +1,6 @@
 const date = new Date()
 const date2 = new Date(date.getTime() + (7 * 60 * 60 * 1000))
-const today = date2.getDay()
+const today = date.getDay()
 const week = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
 
 function updateJadwal() {
@@ -66,11 +66,11 @@ function updateWaktu() {
         minute: 'numeric',
         second: 'numeric',
     });
-    const formattedTime = formatter.format(date2);
+    const formattedTime = formatter.format(date);
     const input = document.getElementById("jam")
     let text = `${week[today]} : ${formattedTime}`
 
     input.innerHTML = text
 }
-
+setInterval(updateWaktu(),1000)
 updateWaktu()
