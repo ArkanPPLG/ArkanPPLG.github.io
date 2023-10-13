@@ -1,21 +1,12 @@
 const date = new Date()
 const date2 = new Date(date.getTime() + (7 * 60 * 60 * 1000))
 const today = date.getDay()
-const week = ["Minggu","Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-
-const formatter = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'UTC',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-});
-
-const formattedTime = formatter.format(date);
+const week = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
 
 function updateJadwal() {
     const mapel = {
         0: ["LIBURRRR"],
-        1: ["Upcara","PKK (LAB)", "Istirahat", "Bahasa Indonesia", "PABP", "PBO"],
+        1: ["Upcara", "PKK (LAB)", "Istirahat", "Bahasa Indonesia", "PABP", "PBO"],
         2: ["PABP", "Bahasa Indonesia", "Istirahat", "MTK", "PKK", "PKN", "Istirahat ke-2", "Web (LAB)", "Web (LAB)"],
         3: ["PBO (LAB)", "Mikrotik", "Istirahat", "PKK", "MTK"],
         4: ["PBO (LAB)", "Mikrotik (LAB)", "Istirahat", "DB", "DB"],
@@ -29,7 +20,7 @@ function updateJadwal() {
     const hariIni = week[today];
     let text = `Jadwal Pelajaran hari <strong>${hariIni}</strong>:<br>`
 
-    for(let i = 0;i<Jadwal.length;i++){
+    for (let i = 0; i < Jadwal.length; i++) {
         text = text + `${Jadwal[i]}<br>`
     }
     inputJadwal.innerHTML = text
@@ -55,7 +46,7 @@ function updatePiket() {
     const hariIni = week[today];
     let text = `Jadwal Piket hari <strong>${hariIni}</strong>:<br>`
 
-    for(let i = 0;i<Jadwal.length;i++){
+    for (let i = 0; i < Jadwal.length; i++) {
         text = text + `${Jadwal[i]}<br>`
     }
     inputPiket.innerHTML = text
@@ -65,6 +56,17 @@ setInterval(updatePiket, 60000)
 updatePiket()
 
 function updateWaktu() {
+    const date = new Date()
+    const date2 = new Date(date.getTime() + (7 * 60 * 60 * 1000))
+    const today = date.getDay()
+    const week = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
+    const formatter = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'UTC',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+    });
+    const formattedTime = formatter.format(date2);
     const input = document.getElementById("jam")
     let text = `${week[today]} : ${formattedTime}`
 
@@ -72,3 +74,4 @@ function updateWaktu() {
 }
 
 setInterval(updateWaktu, 1000)
+updateWaktu()
