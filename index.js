@@ -10,7 +10,7 @@ const formatter = new Intl.DateTimeFormat('en-US', {
     second: 'numeric',
 });
 
-const formattedTime = formatter.format(date2);
+const formattedTime = formatter.format(date);
 
 function updateJadwal() {
     const mapel = {
