@@ -73,5 +73,4 @@ function updateWaktu() {
     input.innerHTML = text
 }
 
-setInterval(updateWaktu, 1000)
 updateWaktu()
