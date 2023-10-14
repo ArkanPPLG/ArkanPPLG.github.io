@@ -66,6 +66,21 @@ function updateWaktu() {
         minute: 'numeric',
         second: 'numeric',
     });
+
+    const hour = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'UTC',
+        hour: 'numeric'
+    });
+    const minute = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'UTC',
+        minute: 'numeric'
+    });
+
+    const jam = hour.format(date2)
+    const menit = minute.format(date2)
+
+    const intm = parseInt(menit)
+    
     const formattedTime = formatter.format(date2);
     const input = document.getElementById("jam")
     let text = `${week[today]} : ${formattedTime}`
