@@ -100,7 +100,7 @@ function updateWaktu() {
         let pel = sabtu[7]
     }
     
-    input.innerHTML = text + `<br> ${pel}`
+    input.innerHTML = `${text}<br>${pel}`
 }
 setInterval(updateWaktu,1000)
 updateWaktu()
