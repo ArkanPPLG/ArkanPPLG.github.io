@@ -80,12 +80,27 @@ function updateWaktu() {
     const menit = minute.format(date2)
 
     const intm = parseInt(menit)
+
+    const sabtu = {
+        1: "Jepang",
+        2: "Jepang",
+        3: "Sejarah",
+        4: "Sejarah",
+        6: "Istirahat",
+        7: "WEB",
+        8: "WEB",
+        9: "Inggris",
+        10: "Inggris"
+    }
     
     const formattedTime = formatter.format(date2);
     const input = document.getElementById("jam")
     let text = `${week[today]} : ${formattedTime}`
-
-    input.innerHTML = text
+    if (jam == "10 PM" && intm >= 0 && intm <= 40) {
+        let pel = sabtu[7]
+    }
+    
+    input.innerHTML = text + `<br> ${pel}`
 }
 setInterval(updateWaktu,1000)
 updateWaktu()
