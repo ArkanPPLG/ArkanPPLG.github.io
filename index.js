@@ -187,7 +187,7 @@ function updateWaktu() {
         data = jamPelajaran[today][7]
     }else if(jam == "11 AM" && menit >= 20 && menit < 55){
         data = jamPelajaran[today][8]
-    }else if(jam == "11 AM" && menit >= 55 && menit <= 59 || jam == "12 AM" && menit >= 0 && menit < 30){
+    }else if(jam == "11 AM" && menit >= 55 && menit <= 59 || jam == "12 PM" && menit >= 0 && menit < 30){
         data = jamPelajaran[today][9]
     }else{
         data = "tidak ada jam pelajaran"
