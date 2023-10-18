@@ -5,12 +5,29 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <h6>Arkan Mustofa P</h6>
-    <h1>Jadwal Pelajaran</h1>
-    <div id="schedule"></div>
-    <h1>Jadwal Piket</h1>
-    <div id="piket"></div>
+    <h1>Selamat datang di Website Arkan</h1>
+    <div class="button">
+        <button class="btn" data-content="updateJadwal" data-target="list-pelajaran">Jadwal Pelajaran</button>
+        <button class="btn" data-content="updatePiket" data-target="list-piket">Jadwal Piket</button>
+    </div>
+    <div class="list" id="list-pelajaran">
+        <span id="schedule"></span>
+    </div>
+
+    <div class="list" id="list-piket">
+        <span id="piket"></span>
+    </div>
+
+    <!-- <div id="box">
+        <h1>Jadwal Pelajaran</h1>
+        <div id="schedule"></div>
+
+        <h1>Jadwal Piket</h1>
+        <div id="piket"></div>
+    </div> -->
+
     <div id="jam"></div>
+    
     <script src="index.js"></script>
 </body>
 </html>
