@@ -15,6 +15,11 @@ h1 {
     padding: 10px 20px;
     cursor: pointer;
 }
+
+.btn:hover{
+    background-color: rgb(219, 161, 43);
+}
+
 #list-pelajaran, #list-piket{
     position: fixed;
     background-color: rgb(140, 39, 39);
@@ -33,7 +38,11 @@ h1 {
 }
 
 @media (max-width: 600px) {
-    #box {
+    #list-pelajaran, #list-piket {
+        width: 90%;
+    }
+
+    .button {
         width: 90%;
     }
 }
