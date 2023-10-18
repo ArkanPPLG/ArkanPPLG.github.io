@@ -8,17 +8,28 @@ h1 {
     color: #333;
 }
 
+.btn{
+    border: none;
+    background-color: rgb(140, 39, 39);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#list-pelajaran, #list-piket{
+    position: fixed;
+    background-color: rgb(140, 39, 39);
+    color: rgb(219, 161, 43);
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.5s;
+}
 #box {
     margin: 20px;
     padding: 10px;
     max-width: 100%;
     border: 1px solid #333;
     background-color: #b1fff8;
-}
-
-#piket {
-    border: 1px solid #061280;
-    background-color: #589a6b;
 }
 
 @media (max-width: 600px) {
