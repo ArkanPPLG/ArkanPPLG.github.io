@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgba(19, 132, 6, 0.757);
+}
+
+h1 {
+    color: #333;
+}
+
+.btn{
+    border: none;
+    background-color: rgb(140, 39, 39);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(219, 161, 43);
+}
+
+#list-pelajaran, #list-piket {
+    background-color: rgb(140, 39, 39);
+    color: rgb(219, 161, 43);
+    height: 0;
+    width: 100%;
+    transition: 0.5s;
+    position: fixed;
+    left: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 760px){
+ h1{
+    color: green;
+ }   
+ body{
+    background-color: #c5d230a7;
+ }
+}
