@@ -1,28 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beranda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Selamat datang di Website Arkan</h1>
-    <div class="container">
-        <div class="button">
-            <button class="btn" data-content="updateJadwal" data-target="list-pelajaran">Jadwal Pelajaran</button>
-            <button class="btn" data-content="updatePiket" data-target="list-piket">Jadwal Piket</button>
+  <!--bagian beranda-->
+  <nav>
+      <img src="https://cdn.discordapp.com/attachments/1009824057967005759/1163420317834821662/15797431041_waifu2x_photo_noise2_scale.png?ex=653f829b&is=652d0d9b&hm=8f9cf6a617f5544ce01a8dd382adda8501104ff95a0757874b0a4844b39529a2&" alt="">
+      <div class="menu-hamburger">
+        <input type="checkbox" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    <ul class="menu-nav">
+         <div class="menu-satu">
+          <label for="mapel">Mapel</label>
+          <div class="menu-toggle">
+              <input type="checkbox" id="mapel" name="toggle">
+              <span></span>
+              <span></span>
+          </div>
+          <label for="piket">Piket</label>
+          <div class="menu-toggle">
+            <input type="checkbox" id="piket" name="toggle">
+            <span></span>
+            <span></span>
         </div>
-        <div class="list" id="list-pelajaran">
-            <span id="schedule"></span>
-        </div>
-
-        <div class="list" id="list-piket">
-            <span id="piket"></span>
-        </div>
+        <div class="menu-dua">
+            <label for="fotokel">Foto</label>
+            <div class="menu-toggle">
+              <input type="checkbox" id="fotokel" name="toggle">
+              <span></span>
+              <span></span>
+            </div>
+            <label for="kontak">Kontak</label>
+            <div class="menu-toggle">
+              <input type="checkbox" id="kontak" name="toggle">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+    </ul>  
+  </nav>
+  <main>
+    <h2>WELCOME TO WEBSITE</h2>
+    <h1>XI PPLG 1</h1>
+    <img src="https://i.ibb.co/Jm7sBQz/77a61e85-6596-4270-a012-edc88d3c6328.jpg" alt="">
+  </main>
+  <footer>
+    <a href="https://instagram.com/pplg.archives?igshid=NTc4MTIwNjQ2YQ==">
+      <img src="//kebudayaan.kemdikbud.go.id/bpcbbali/wp-content/uploads/sites/26/2020/07/logo-ig-instagram-png-transparent-instagram-images-pluspng-3.png" alt="instagram.png" id="ig">
+    </a>
+    <label for="ig">pplg.archives</label>
+  </footer>
+<!--bagian mapel-->
+<article>
+      <p class="time" id="time2">jam/menit/detik</p>
+      <h1>JADWAL PELAJARAN</h1>
+    <div class="jadwal">
+      <div class="container-jadwal">
+        <div class="hari"><p>SENIN</p></div>
+        <div class="hari"><p>SELASA</p></div>
+        <div class="hari"><p>RABU</p></div>
+        <div class="hari"><p>KAMIS</p></div>
+        <div class="hari"><p>JUM'AT</p></div>
+        <div class="hari"><p>SABTU</p></div>
+        <div class="sekarang"><p>HARI INI</p></div>
+      </div>
     </div>
-
-    <div id="jam"></div>
-<script src="index.js"></script>
+    <div class="nama-pelajaran">
+      <div class="box-pelajaran">
+        <div class="pelajaran-hari">
+          <p>UPACARA</p>
+          <p>PKK(LAB)</p>
+          <p>REST</p>
+          <p>INDO</p>
+          <p>PABP</p>
+          <p>PBO</p>
+        </div>
+        <div class="pelajaran-hari">
+            <p>PABP</p>
+            <p>INDO</p>
+            <p>REST</p>
+            <p>MTK</p>
+            <p>PKK</p>
+            <p>PKN</p>
+            <p>WEB(LAB)</p>
+        </div>
+        <div class="pelajaran-hari">
+          <p>PBO(LAB)</p>
+          <p>MIKROTIK</p>
+          <p>REST</p>
+          <p>PKK</p>
+          <p>MTK</p>
+        </div>
+        <div class="pelajaran-hari">
+          <p>PBO(LAB)</p>
+          <p>MIKROTIK</p>
+          <p>REST</p>
+          <p>DB</p>
+        </div>
+        <div class="pelajaran-hari">
+          <p>WEB(LAB)</p>
+          <p>PJOK</p>
+          <p>REST</p>
+          <p>INGGRIS</p>
+        </div>
+        <div class="pelajaran-hari">
+          <p>JEPANG</p>
+          <p>SEJARAH</p>
+          <p>REST</p>
+          <p>WEB</p>
+          <p>INGGRIS</p>
+        </div>
+        <div class="pelajaran-sekarang">
+        </div>
+      </div>
+  </div>
+</article>
+<!--bagian piket-->
+  <article class="piket">
+      <p class="time" id="time">jam/menit/detik</p>
+      <h1>Jadwal PIKET</h1>
+    <div class="jadwal">
+      <div class="container-jadwal">
+        <div class="hari"><p>SENIN</p></div>
+        <div class="hari"><p>SELASA</p></div>
+        <div class="hari"><p>RABU</p></div>
+        <div class="hari"><p>KAMIS</p></div>
+        <div class="hari"><p>JUM'AT</p></div>
+        <div class="hari"><p>SABTU</p></div>
+        <div class="sekarang"><p>HARI INI</p></div>
+      </div>
+    </div>
+    <div class="nama-pelajaran">
+      <div class="box-pelajaran">
+        <div class="pelajaran-hari">
+          <p>Abdul</p>
+          <p>ADITYA</p>
+          <p>Akmal</p>
+          <p>Aldri</p>
+          <p>Anggira</p>
+          <p>Arifa</p>
+        </div>
+        <div class="pelajaran-hari">
+            <p>ARKAN</p>
+            <p>Bagas</p>
+            <p>Dhimas</p>
+            <p>Faisal</p>
+            <p>Fitra</p>
+        </div>
+        <div class="pelajaran-hari">
+          <p>Frega</p>
+          <p>Rashad</p>
+          <p>Ikhfan</p>
+          <p>Keke</p>
+          <p>Kent</p>
+          <p>Fathir</p>
+        </div>
+        <div class="pelajaran-hari">
+          <p>Fajar</p>
+          <p>Ghailan</p>
+          <p>Muthia</p>
+          <p>Nabila</p>
+          <p>Naren</p>
+          <p>Radit</p>
+        </div>
+        <div class="pelajaran-hari">
+          <p>Rafi</p>
+          <p>RAHEL</p>
+          <p>Raihan</p>
+          <p>Rasya</p>
+          <p>Reyvan</p>
+          <p>Rian</p>
+        </div>
+        <div class="pelajaran-hari">
+          <p>Rifwan</p>
+          <p>Salfa</p>
+          <p>Salwa</p>
+          <p>Sindi</p>
+          <p>Syafitri</p>
+          <p>Zulkifli</p>
+        </div>
+        <div class="piket-sekarang">
+        </div>
+      </div>
+    </div>
+  </article>
+<!-- bagian foto -->
+  <div class="wrapper">
+    <div class="navigation-bar">
+      <a href="#slide-1">1</a>
+      <a href="#slide-2">2</a>
+      <a href="#slide-3">3</a>
+    </div>
+    <div class="slides">   
+      <div class="container">
+        <div class="content1">
+          <span id="slide-1"></span>
+          <h1>SISWA/SISWI XI PPLG 1</h1>
+          <div class="box-img">
+            <img src="https://i.ibb.co/GJZkZxf/Screenshot-2023-10-16-050158.png" alt="">
+            <img src="https://i.ibb.co/cgjbr57/Screenshot-2023-10-16-050321.png" alt="">
+            <img src="https://i.ibb.co/SnGyz7h/Screenshot-2023-10-16-050330.png" alt="">
+            <img src="https://i.ibb.co/5LpfF8t/Screenshot-2023-10-16-050339.png" alt="">
+            <img src="https://i.ibb.co/GVmFgFp/Screenshot-2023-10-16-050351.png" alt="">
+            <img src="https://i.ibb.co/51txnRL/Screenshot-2023-10-16-050404.png" alt="">
+            <img src="https://i.ibb.co/9Vsx6Cp/Screenshot-2023-10-16-050416.png" alt="">
+          </div>
+          <div class="box-nama">
+            <p>ABDUL</p>
+            <p>ADITYA</p>
+            <p>AKMAL</p>
+            <p>ALDRI</p>
+            <p>ANGGIRA</p>
+            <p>ARIFA</p>
+            <p>ARKAN</p>
+          </div>
+          <div class="box-img">
+            <img src="https://i.ibb.co/bPdKFrg/Screenshot-2023-10-16-050425.png" alt="">
+            <img src="https://i.ibb.co/0C8mYjt/Screenshot-2023-10-16-050433.png" alt="">
+            <img src="https://i.ibb.co/G2fZRgP/Screenshot-2023-10-16-050445.png" alt="">
+            <img src="https://i.ibb.co/7kVN9Rx/Screenshot-2023-10-16-050453.png" alt="">
+            <img src="https://i.ibb.co/k04tQH3/Screenshot-2023-10-16-050501.png" alt="">
+            <img src="https://i.ibb.co/C0M7QQs/Screenshot-2023-10-16-050511.png" alt="">
+            <img src="https://i.ibb.co/WKbqj1S/Screenshot-2023-10-16-050518.png" alt="">
+          </div>
+          <div class="box-nama">
+            <p>BAGAS</p>
+            <p>BERNI</p>
+            <p>DHIMAS</p>
+            <p>FAISAL</p>
+            <p>FITRA</p>
+            <p>FREGA</p>
+            <p>RASHAD</p>
+          </div>
+        </div>
+        <div class="content2">
+          <span id="slide-2"></span>
+          <h1>SISWA/SISWI XI PPLG 1</h1>
+          <div class="box-img">
+            <img src="https://i.ibb.co/y4G7kgL/Screenshot-2023-10-16-050526.png" alt="">
+            <img src="https://i.ibb.co/QF2JX9G/Screenshot-2023-10-16-050534.png" alt="">
+            <img src="https://i.ibb.co/JCp9J5N/Screenshot-2023-10-16-050541.png" alt="">
+            <img src="https://i.ibb.co/XX5wDMK/Screenshot-2023-10-16-050549.png" alt="">
+            <img src="https://i.ibb.co/dtwS9nP/Screenshot-2023-10-16-050556.png" alt="">
+            <img src="https://i.ibb.co/pLSHJs1/Screenshot-2023-10-16-050604.png" alt="">
+            <img src="https://i.ibb.co/RcTxs6M/Screenshot-2023-10-16-050610.png" alt="">
+          </div>
+          <div class="box-nama">
+            <p>IKHFAN</p>
+            <p>KEKE</p>
+            <p>NATHAN</p>
+            <p>FATHIR</p>
+            <p>FAJAR</p>
+            <p>GHAILAN</p>
+            <p>MUTIA</p>
+          </div>
+          <div class="box-img">
+            <img src="https://i.ibb.co/PCL9JKq/Screenshot-2023-10-16-050619.png" alt="">
+            <img src="https://i.ibb.co/J78Jv1L/Screenshot-2023-10-16-050628.png" alt="">
+            <img src="https://i.ibb.co/LJYF1SD/Screenshot-2023-10-16-050639.png" alt="">
+            <img src="https://i.ibb.co/1sV65SS/Screenshot-2023-10-16-050646.png" alt="">
+            <img src="https://i.ibb.co/nC3Swqn/Screenshot-2023-10-16-050654.png" alt="">
+            <img src="https://i.ibb.co/hXXRRNP/Screenshot-2023-10-16-050701.png" alt="">
+            <img src="https://i.ibb.co/4Rmc7PT/Screenshot-2023-10-16-050713.png" alt="">
+          </div>
+          <div class="box-nama">
+            <p>NABILA</p>
+            <p>NARENDRA</p>
+            <p>RADIT</p>
+            <p>RAFI</p>
+            <p>REIHAN</p>
+            <p>RASYA</p>
+            <p>REYVAN</p>
+          </div>
+        </div>
+        <div class="content3">
+          <span id="slide-3"></span>
+          <h1>SISWA/SISWI XI PPLG 1</h1>
+          <div class="box-img1">
+            <img src="https://i.ibb.co/PrGzrwc/Screenshot-2023-10-16-050721.png" alt="">
+            <img src="https://i.ibb.co/LY3Z5Py/Screenshot-2023-10-16-050744.png" alt="">
+            <img src="https://i.ibb.co/wYnFjnK/Screenshot-2023-10-16-050752.png" alt="">
+            <img src="https://i.ibb.co/YQ1Yrqj/Screenshot-2023-10-16-050803.png" alt="">
+            <img src="https://i.ibb.co/HKHtrGP/Screenshot-2023-10-16-050812.png" alt="">
+            <img src="https://i.ibb.co/6wp9S2f/Screenshot-2023-10-16-050828.png" alt="">
+          </div>
+          <div class="box-nama1">
+            <p>RIAN</p>
+            <p>SALFA</p>
+            <p>SALWA</p>
+            <p>SINDI</p>
+            <p>SYAFITRI</p>
+            <p>ZULKIFLI</p>
+          </div>
+          <div class="box-img2">
+            <img src="https://i.ibb.co/PjLktDg/Screenshot-2023-10-16-050820.png" alt="">
+            <img src="https://i.ibb.co/4shBNGh/Screenshot-2023-10-16-050733.png" alt="">
+          </div>
+          <div class="box-nama2">
+            <p>RAHEL</p>
+            <p>RIFWAN</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- bagian kontak -->
+  <div class="content-kontak">
+    <h1>KONTAK</h1>
+    <div class="box-three">
+      <div class="box-profile">
+        <div class="box-photo">
+          <img src="https://i.ibb.co/YBPQrzn/Screenshot-2023-10-16-050820.png" alt="">
+        </div>
+        <div class="text">
+          <p>SEBAGAI :UI/UX</p>
+          <p>NOMOR  :+62 858-7204-3323</p>
+          <p>EMAIL  :rahelandriano@gmail.com</p>
+        </div>
+      </div>
+      <p>RAHEL ANDRIANO</p>
+      <div class="box-profile">
+        <div class="box-photo">
+          <img src="https://i.ibb.co/LzwLTwP/Screenshot-2023-10-16-050416.png" alt="">
+        </div>
+        <div class="text">
+          <p>SEBAGAI :PROGRAMER (JavaScript)</p>
+          <p>NOMOR  :+62 895-6176-32762</p>
+          <p>EMAIL  :arkanuy123@gmail.com</p>
+        </div>
+      </div>
+      <p>ARKAN MUSTOFA</p>
+      <div class="box-profile">
+        <div class="box-photo">
+          <img src="https://i.ibb.co/2d9DhxQ/Screenshot-2023-10-16-050321.png" alt="">
+        </div>
+        <div class="text">
+          <p>SEBAGAI :PROGRAMER (HTML/CSS)</p>
+          <p>NOMOR  :+62 838-1656-3679</p>
+          <p>EMAIL  :aditalvisa@gmail.com</p>
+        </div>
+      </div>
+      <p>ADITYA ALFITODINOVA</p>
+    </div>
+  </div>
 </body>
+<script src="script.js"></script>
 </html>
