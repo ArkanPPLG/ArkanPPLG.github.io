@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>beranda</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!--bagian beranda-->
@@ -61,70 +61,186 @@
     <label for="ig">pplg.archives</label>
   </footer>
 <!--bagian mapel-->
-<article>
-      <p class="time" id="time2">jam/menit/detik</p>
-      <h1>JADWAL PELAJARAN</h1>
+<div class="table-container">
+  <table id="table">
+    <tr>
+        <th colspan="4">
+            <p id="time"></p>
+            <h1>Jadwal pelajaran</h1>
+        </th>
+    </tr>
     <div class="jadwal">
-      <div class="container-jadwal">
-        <div class="hari"><p>SENIN</p></div>
-        <div class="hari"><p>SELASA</p></div>
-        <div class="hari"><p>RABU</p></div>
-        <div class="hari"><p>KAMIS</p></div>
-        <div class="hari"><p>JUM'AT</p></div>
-        <div class="hari"><p>SABTU</p></div>
-        <div class="sekarang"><p>HARI INI</p></div>
-      </div>
+        <tr class="heading">
+            <th>Hari</th>
+            <th>Waktu</th>
+            <th>Guru</th>
+            <th>Mata Pelajaran</th>
+        </tr>
+        <tr class="senin">
+            <td rowspan="6">Senin</td>
+            <td>07:00 - 08:20</td>
+            <td>-</td>
+            <td>Upacara</td>
+        </tr>
+        <tr class="senin">
+          <td>08:20 - 09:40</td>
+          <td>Saftrian MD</td>
+          <td>PKK</td>
+        </tr>
+        <tr class="senin">
+          <td>09:40 - 10:00</td>
+          <td>-</td>
+          <td>Istirahat</td>
+        </tr>
+        <tr class="senin">
+          <td>10:00 - 10:40</td>
+          <td>Lilis</td>
+          <td>Bahasa Indonesia</td>
+        </tr>
+        <tr class="senin">
+          <td>10:40 - 11:20</td>
+          <td>Asep Sudrajat</td>
+          <td>PABP</td>
+        </tr>
+        <tr class="senin">
+          <td>11:20 - 12:30</td>
+          <td>Rina Erwina</td>
+          <td>PBO</td>
+        </tr>
+        <tr class="selasa">
+          <td rowspan="7">Selasa</td>
+          <td>07:00 - 08:20</td>
+          <td>Asep Sudrajat</td>
+          <td>PABP</td>
+        </tr>
+        <tr class="selasa">
+          <td>08:20 - 09:40</td>
+          <td>Lilis</td>
+          <td>Bahasa Indonesia</td>
+        </tr>
+        <tr class="selasa">
+          <td>09:40 - 10:00</td>
+          <td>-</td>
+          <td>Istirahat</td>
+        </tr>
+        <tr class="selasa">
+          <td>10:00 - 10:40</td>
+          <td>Wahyu Taufik</td>
+          <td>MTK</td>
+        </tr>
+        <tr class="selasa">
+          <td>10:40 - 11:20</td>
+          <td>Saftrian MD</td>
+          <td>PKK</td>
+        </tr>
+        <tr class="selasa">
+          <td>11:20 - 12:30</td>
+          <td>Abin</td>
+          <td>PKN</td>
+        </tr>
+        <tr class="selasa">
+          <td>13:00 - 15:00</td>
+          <td>M. Luqman</td>
+          <td>WEB</td>
+        </tr>
+        <tr class="rabu">
+          <td rowspan="5">Rabu</td>
+          <td>07:00 - 08:20</td>
+          <td>Rina Erwina</td>
+          <td>PBO</td>
+        </tr>
+        <tr class="rabu">
+          <td>08:20 - 09:40</td>
+          <td>Gilang M Noer</td>
+          <td>Mikrotik</td>
+        </tr>
+        <tr class="rabu">
+          <td>09:40 - 10:00</td>
+          <td>-</td>
+          <td>Istirahat</td>
+        </tr>
+        <tr class="rabu">
+          <td>10:00 - 11:20</td>
+          <td>Saftrian MD</td>
+          <td>PKK</td>
+        </tr>
+        <tr class="rabu">
+          <td>11:20 - 12:30</td>
+          <td>Wahyu Taufik</td>
+          <td>MTK</td>
+        </tr>
+        <tr class="kamis">
+          <td rowspan="4">Kamis</td>
+          <td>07:00 - 08:20</td>
+          <td>Rina Erwina</td>
+          <td>PBO</td>
+        </tr>
+        <tr class="kamis">
+          <td>08:20 - 09:40</td>
+          <td>Gilang M Noer</td>
+          <td>Mikrotik</td>
+        </tr>
+        <tr class="kamis">
+          <td>09:40 - 10:00</td>
+          <td>-</td>
+          <td>Istirahat</td>
+        </tr>
+        <tr class="kamis">
+          <td>10:00 - 12:30</td>
+          <td>Rina Erwina</td>
+          <td>Database</td>
+        </tr>
+        <tr class="jumat">
+          <td rowspan="4">Jum'at</td>
+          <td>07:00 - 08:20</td>
+          <td>M. Luqman</td>
+          <td>WEB</td>
+        </tr>
+        <tr class="jumat">
+          <td>08:20 - 09:40</td>
+          <td>Alfi Adhi Pratama</td>
+          <td>PJOK</td>
+        </tr>
+        <tr class="jumat">
+          <td>09:40 - 10:00</td>
+          <td>-</td>
+          <td>Istirahat</td>
+        </tr>
+        <tr class="jumat">
+          <td>10:00 - 11:20</td>
+          <td>Nurwita</td>
+          <td>Bahasa Inggris</td>
+        </tr>
+        <tr class="sabtu">
+          <td rowspan="5">Sabtu</td>
+          <td>07:00 - 08:20</td>
+          <td>Neni Rosmayeni</td>
+          <td>Jepang</td>
+        </tr>
+        <tr class="sabtu">
+          <td>08:20 - 09:40</td>
+          <td>Nirwan</td>
+          <td>Sejarah</td>
+        </tr>
+        <tr class="sabtu">
+          <td>09:40 - 10:00</td>
+          <td>-</td>
+          <td>Istirahat</td>
+        </tr>
+        <tr class="sabtu">
+          <td>10:00 - 11:20</td>
+          <td>M. Luqman</td>
+          <td>WEB</td>
+        </tr>
+        <tr class="sabtu">
+          <td>11:20 - 12:30</td>
+          <td>Nurwita</td>
+          <td>Inggris</td>
+        </tr>
     </div>
-    <div class="nama-pelajaran">
-      <div class="box-pelajaran">
-        <div class="pelajaran-hari">
-          <p>UPACARA</p>
-          <p>PKK(LAB)</p>
-          <p>REST</p>
-          <p>INDO</p>
-          <p>PABP</p>
-          <p>PBO</p>
-        </div>
-        <div class="pelajaran-hari">
-            <p>PABP</p>
-            <p>INDO</p>
-            <p>REST</p>
-            <p>MTK</p>
-            <p>PKK</p>
-            <p>PKN</p>
-            <p>WEB(LAB)</p>
-        </div>
-        <div class="pelajaran-hari">
-          <p>PBO(LAB)</p>
-          <p>MIKROTIK</p>
-          <p>REST</p>
-          <p>PKK</p>
-          <p>MTK</p>
-        </div>
-        <div class="pelajaran-hari">
-          <p>PBO(LAB)</p>
-          <p>MIKROTIK</p>
-          <p>REST</p>
-          <p>DB</p>
-        </div>
-        <div class="pelajaran-hari">
-          <p>WEB(LAB)</p>
-          <p>PJOK</p>
-          <p>REST</p>
-          <p>INGGRIS</p>
-        </div>
-        <div class="pelajaran-hari">
-          <p>JEPANG</p>
-          <p>SEJARAH</p>
-          <p>REST</p>
-          <p>WEB</p>
-          <p>INGGRIS</p>
-        </div>
-        <div class="pelajaran-sekarang">
-        </div>
-      </div>
-  </div>
-</article>
+  </table>
+  
+</div>
 <!--bagian piket-->
   <article class="piket">
       <p class="time" id="time">jam/menit/detik</p>
@@ -315,6 +431,7 @@
     </div>
   </div>
 <!-- bagian kontak -->
+<div class="container-kontak">
   <div class="content-kontak">
     <h1>KONTAK</h1>
     <div class="box-three">
@@ -353,6 +470,8 @@
       <p>ADITYA ALFITODINOVA</p>
     </div>
   </div>
+</div>
+  
 </body>
-<script src="index.js"></script>
+<script src="script.js"></script>
 </html>
