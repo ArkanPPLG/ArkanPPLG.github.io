@@ -7,7 +7,7 @@ function updateWaktu() {
     const date = new Date();
     const date2 = new Date(date.getTime() + 7 * 60 * 60 * 1000);
     const today = date.getDay();
-    const week = ['minggu', 'menin', 'melasa', 'rabu', 'kamis', 'jumat', 'sabtu'];
+    const week = ['minggu', 'senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu'];
     const formatter = new Intl.DateTimeFormat('en-US', {
         timeZone: 'UTC',
         hour: 'numeric',
