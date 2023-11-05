@@ -517,13 +517,18 @@ table {
   
   background-color: white;
   font-family: 'Inconsolata', monospace;
-  z-index: 5;
   display: table;
+}
+table th h1{
+  font-size: 25px;
+}
+table th p{
+  font-size: 12px;
 }
 .table-container{
   position: fixed;
   overflow-y: scroll;
-  top: 40px;
+  top: 50px;
   width: 0;
   height: 70vh;
   z-index: 5;
