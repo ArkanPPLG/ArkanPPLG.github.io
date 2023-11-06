@@ -174,7 +174,7 @@ function updateWaktu() {
 
 
     const formattedTime = formatter.format(date2);
-    const input = document.getElementById('time');
+    const input = document.querySelectorAll('#time');
     let text = `${week[today]} : ${formattedTime}`;
 
     let data;
@@ -207,7 +207,7 @@ function updateWaktu() {
             dataTable = 10
         }
     } else {
-        dataTable= 0;
+        data = 'tidak ada jam pelajaran';
     }
     const tableNow = document.querySelectorAll(`.${week[today]}.tableData${dataTable} td`);
 
@@ -220,7 +220,9 @@ function updateWaktu() {
             item.style.backgroundColor = "rgb(248,255,197)"
         } 
     })
-    input.innerHTML = text;
+    input.forEach((item) => {
+        item.innerHTML = text
+    })
 }
 setInterval(updateWaktu, 1000);
 updateWaktu();
@@ -231,7 +233,7 @@ const tampilkanFoto = document.getElementById('fotokel');
 const tampilkanKontak = document.getElementById('kontak');
 
 const article = document.querySelector('.table-container'); // mapel
-const piket = document.querySelector('.piket'); // piket
+const piket = document.querySelector('.table-container-piket'); // piket
 const foto = document.querySelector('.wrapper'); //foto
 const kontak = document.querySelector('.content-kontak'); // kontak
 
@@ -292,7 +294,7 @@ checkboxes.forEach((checkbox) => {
             open = 1;
         } else if (this === tampilkanPiket && this.checked) {
             console.log('Tampilkan Piket');
-            piket.style.width = '98vh';
+            piket.style.width = '100%';
             article.style.width = '0';
             kontak.style.visibility = 'hidden';
             tampilkanMapel.checked = false;
@@ -368,7 +370,7 @@ checkboxes.forEach((checkbox) => {
 
     document.addEventListener('click', function (event) {
         let tampilanMapel = document.querySelector('.table-container');
-        let tampilanPiket = document.querySelector('.piket');
+        let tampilanPiket = document.querySelector('.table-container-piket');
         let tampilanFoto = document.querySelector('.wrapper');
         let tampilanKontak = document.querySelector('.content-kontak');
         if (open !== -1) {
