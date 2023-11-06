@@ -207,9 +207,9 @@ function updateWaktu() {
             dataTable = 10
         }
     } else {
-        data = 'tidak ada jam pelajaran';
+        dataTable= 0;
     }
-    const tableNow = document.querySelectorAll(`.${week}.tableData${dataTable} td`);
+    const tableNow = document.querySelectorAll(`.${week[today]}.tableData${dataTable} td`);
 
     tableNow.forEach((item, index) => {
         if(dataTable == 1 || dataTable == 2){
