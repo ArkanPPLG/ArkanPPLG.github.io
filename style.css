@@ -530,7 +530,17 @@ table th p{
   overflow-y: scroll;
   top: 50px;
   width: 0;
-  height: 70vh;
+  height: 85vh;
+  z-index: 5;
+  transition: 0.6s;
+}
+
+.table-container-piket{
+  position: fixed;
+  overflow-y: scroll;
+  top: 50px;
+  width: 0;
+  height: 85vh;
   z-index: 5;
   transition: 0.6s;
 }
@@ -588,7 +598,7 @@ th h1 {
     box-sizing: border-box;
     margin-left: 100vw;
     padding: 4vh;
-    font-size: 4.5vh;
+    font-size: 3vh;
   }
 
   .menu-nav div {
